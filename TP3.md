@@ -15,3 +15,19 @@ Vincent CHAVES - 3ICS
 ###     - bob, charlie, dave dans infra
 - ![image](https://user-images.githubusercontent.com/113091304/191707543-ddecf4eb-61ed-495c-be2c-ce0d4d345910.png)
 
+### 4. Donnez deux moyens d’afficher les membres de infra
+- ![image](https://user-images.githubusercontent.com/113091304/191709568-b5a763ea-bb57-447e-918f-26e512f6a2b5.png)
+- ![image](https://user-images.githubusercontent.com/113091304/191709727-4f255611-d5f1-40a3-b555-77198237505e.png)
+
+### 5. Faites de dev le groupe propriétaire des répertoires /home/alice et /home/bob et de infra le groupe propriétaire de /home/charlie et /home/dave
+- ![image](https://user-images.githubusercontent.com/113091304/191714057-6ee7c9e1-7fe2-4386-8738-1895b7227306.png)
+
+### 6. Remplacez le groupe primaire des utilisateurs :
+###   - dev pour alice et bob
+###   - infra pour charlie et dave
+![image](https://user-images.githubusercontent.com/113091304/191715897-c84525bb-6e4d-4045-b6b8-7ee4a1c2f347.png)
+
+### 7. Créez deux répertoires /home/dev et /home/infra pour le contenu commun aux membres de chaque groupe, et mettez en place les permissions leur permettant d’écrire dans ces dossiers.
+
+
+
