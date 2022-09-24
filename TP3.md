@@ -31,6 +31,7 @@ Vincent CHAVES - 3ICS
 ### 7. Créez deux répertoires /home/dev et /home/infra pour le contenu commun aux membres de chaque groupe, et mettez en place les permissions leur permettant d’écrire dans ces dossiers.
 - ![image](https://user-images.githubusercontent.com/113091304/192102489-a6301ddd-dd50-4408-bffe-1dd5fd6140b5.png)
 - ![image](https://user-images.githubusercontent.com/113091304/192102510-7c45a9d3-a00c-4732-9381-9d6516e3c94f.png)
+- 
 
 
 8. Comment faire pour que, dans ces dossiers, seul le propriétaire d’un fichier ait le droit de renommer
