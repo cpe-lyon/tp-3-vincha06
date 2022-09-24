@@ -18,6 +18,7 @@ Vincent CHAVES - 3ICS
 ### 4. Donnez deux moyens d’afficher les membres de infra
 - ![image](https://user-images.githubusercontent.com/113091304/191709568-b5a763ea-bb57-447e-918f-26e512f6a2b5.png)
 - ![image](https://user-images.githubusercontent.com/113091304/191709727-4f255611-d5f1-40a3-b555-77198237505e.png)
+- On peut aussi aller dans /home puis effectuer un "ll"
 
 ### 5. Faites de dev le groupe propriétaire des répertoires /home/alice et /home/bob et de infra le groupe propriétaire de /home/charlie et /home/dave
 - ![image](https://user-images.githubusercontent.com/113091304/191714057-6ee7c9e1-7fe2-4386-8738-1895b7227306.png)
@@ -28,6 +29,32 @@ Vincent CHAVES - 3ICS
 ![image](https://user-images.githubusercontent.com/113091304/191715897-c84525bb-6e4d-4045-b6b8-7ee4a1c2f347.png)
 
 ### 7. Créez deux répertoires /home/dev et /home/infra pour le contenu commun aux membres de chaque groupe, et mettez en place les permissions leur permettant d’écrire dans ces dossiers.
+- ![image](https://user-images.githubusercontent.com/113091304/192102489-a6301ddd-dd50-4408-bffe-1dd5fd6140b5.png)
+- ![image](https://user-images.githubusercontent.com/113091304/192102510-7c45a9d3-a00c-4732-9381-9d6516e3c94f.png)
+
+
+8. Comment faire pour que, dans ces dossiers, seul le propriétaire d’un fichier ait le droit de renommer
+ou supprimer ce fichier ?
+9. Pouvez-vous ouvrir une session en tant que alice ? Pourquoi ?
+10. Activez le compte de l’utilisateur alice et vérifiez que vous pouvez désormais vous connecter avec son
+compte.
+11. Comment obtenir l’uid et le gid de alice ?
+12. Quelle commande permet de retrouver l’utilisateur dont l’uid est 1003 ?
+13. Quel est l’id du groupe dev ?
+14. Quel groupe a pour gid 1002 ? ( Rien n’empêche d’avoir un groupe dont le nom serait 1002...)
+15. Retirez l’utilisateur charlie du groupe infra. Que se passe-t-il ? Expliquez.
+16. Modifiez le compte de dave de sorte que :
+— il expire au 1
+er juin 2021
+— il faut changer de mot de passe avant 90 jours
+— il faut attendre 5 jours pour modifier un mot de passe
+— l’utilisateur est averti 14 jours avant l’expiration de son mot de passe
+— le compte sera bloqué 30 jours après expiration du mot de passe
+17. Quel est l’interpréteur de commandes (Shell) de l’utilisateur root ?
+18. Si vous regardez la liste des comptes présents sur la machine, vous verrez qu’il en existe un nommé
+nobody. A quoi correspond-il ?
+19. Par défaut, combien de temps la commande sudo conserve-t-elle votre mot de passe en mémoire ?
+Quelle commande permet de forcer sudo à oublier votre mot de passe ?
 
 
 
