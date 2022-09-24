@@ -31,11 +31,12 @@ Vincent CHAVES - 3ICS
 ### 7. Créez deux répertoires /home/dev et /home/infra pour le contenu commun aux membres de chaque groupe, et mettez en place les permissions leur permettant d’écrire dans ces dossiers.
 - ![image](https://user-images.githubusercontent.com/113091304/192102489-a6301ddd-dd50-4408-bffe-1dd5fd6140b5.png)
 - ![image](https://user-images.githubusercontent.com/113091304/192102510-7c45a9d3-a00c-4732-9381-9d6516e3c94f.png)
-- 
+- ![image](https://user-images.githubusercontent.com/113091304/192105222-207ec1d8-a0de-404c-8b4e-79b1de96e352.png)
 
+### 8. Comment faire pour que, dans ces dossiers, seul le propriétaire d’un fichier ait le droit de renommer ou supprimer ce fichier ?
+- Il faut enlever les permission de groupe aux autres utilisateurs, laisser que les permissions d'utilisateur, pour celà :
+- ![image](https://user-images.githubusercontent.com/113091304/192107012-52e33652-8af0-482e-8a84-cfcdd886b5be.png)
 
-8. Comment faire pour que, dans ces dossiers, seul le propriétaire d’un fichier ait le droit de renommer
-ou supprimer ce fichier ?
 9. Pouvez-vous ouvrir une session en tant que alice ? Pourquoi ?
 10. Activez le compte de l’utilisateur alice et vérifiez que vous pouvez désormais vous connecter avec son
 compte.
