@@ -34,8 +34,7 @@ Vincent CHAVES - 3ICS
 - ![image](https://user-images.githubusercontent.com/113091304/192105222-207ec1d8-a0de-404c-8b4e-79b1de96e352.png)
 
 ### 8. Comment faire pour que, dans ces dossiers, seul le propriétaire d’un fichier ait le droit de renommer ou supprimer ce fichier ?
-- Il faut enlever les permission de groupe aux autres utilisateurs, laisser que les permissions d'utilisateur, pour celà :
-- ![image](https://user-images.githubusercontent.com/113091304/192107012-52e33652-8af0-482e-8a84-cfcdd886b5be.png)
+
 
 9. Pouvez-vous ouvrir une session en tant que alice ? Pourquoi ?
 10. Activez le compte de l’utilisateur alice et vérifiez que vous pouvez désormais vous connecter avec son
