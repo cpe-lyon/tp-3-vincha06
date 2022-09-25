@@ -78,8 +78,20 @@ Vincent CHAVES - 3ICS
 - ![image](https://user-images.githubusercontent.com/113091304/192166763-5e3df689-8849-41e7-ab8f-b8df4e84b03d.png)
 
 ### 17. Quel est l’interpréteur de commandes (Shell) de l’utilisateur root ?
-### 18. Si vous regardez la liste des comptes présents sur la machine, vous verrez qu’il en existe un nommé nobody. A quoi correspond-il ?
-### 19. Par défaut, combien de temps la commande sudo conserve-t-elle votre mot de passe en mémoire ? Quelle commande permet de forcer sudo à oublier votre mot de passe ?
+- ![image](https://user-images.githubusercontent.com/113091304/192166908-3d9562cb-760b-4aa9-80e8-ad29ef7b7eae.png)
+- Le shell de root est donc bash.
 
+### 18. Si vous regardez la liste des comptes présents sur la machine, vous verrez qu’il en existe un nommé nobody. A quoi correspond-il ?
+- ![image](https://user-images.githubusercontent.com/113091304/192167223-85d5366c-fcd7-4c53-a3a1-f8dc029e5870.png)
+- "nobody" est le nom conventionnel d'un compte d'utilisateur à qui aucun fichier n'appartient, qui n'est dans aucun groupe qui a des privilèges et dont les seules possibilités sont celles que tous les "autres utilisateurs" ont. Il est courant de lancer des démons en tant que nobody, spécialement pour des serveurs, de façon à limiter les dommages qui pourrait être occasionnés par un utilisateur malicieux qui aurait réussi à prendre leur contrôle. 
+
+### 19. Par défaut, combien de temps la commande sudo conserve-t-elle votre mot de passe en mémoire ? Quelle commande permet de forcer sudo à oublier votre mot de passe ?
+- Elle conserve le mot de passe en mémoire pendant 15 minutes.
+- Pour forcer sudo à oublier le mot de passe, il y a la commande :
+- <code> sudo -k </code>
+
+## Exercice 2. Gestion des permissions
+
+### 1
 
 
