@@ -65,14 +65,21 @@ Vincent CHAVES - 3ICS
   - J'ai mis au 1er juin 2022 vu que 2021 est déjà passé :
   - ![image](https://user-images.githubusercontent.com/113091304/192164959-63244479-bd5f-468c-9d11-ddd82ea51aaf.png)
 #### — il faut changer de mot de passe avant 90 jours
-— il faut attendre 5 jours pour modifier un mot de passe
-— l’utilisateur est averti 14 jours avant l’expiration de son mot de passe
-— le compte sera bloqué 30 jours après expiration du mot de passe
-17. Quel est l’interpréteur de commandes (Shell) de l’utilisateur root ?
-18. Si vous regardez la liste des comptes présents sur la machine, vous verrez qu’il en existe un nommé
-nobody. A quoi correspond-il ?
-19. Par défaut, combien de temps la commande sudo conserve-t-elle votre mot de passe en mémoire ?
-Quelle commande permet de forcer sudo à oublier votre mot de passe ?
+  - ![image](https://user-images.githubusercontent.com/113091304/192166557-6a2ff846-ecc5-4fdd-b00c-bfee9e6492ac.png)
+#### — il faut attendre 5 jours pour modifier un mot de passe
+  - ![image](https://user-images.githubusercontent.com/113091304/192166570-964e32e4-288a-4b1b-a2f0-f04209d02552.png)
+#### — l’utilisateur est averti 14 jours avant l’expiration de son mot de passe
+  - ![image](https://user-images.githubusercontent.com/113091304/192166616-0f55d5e3-2ff0-4349-9f25-557319500ba8.png)
+
+#### — le compte sera bloqué 30 jours après expiration du mot de passe
+  - ![image](https://user-images.githubusercontent.com/113091304/192166728-9e2c5621-88d9-4c0b-81d4-ade1d93208e6.png)
+  
+- On vérifie tout ça :
+- ![image](https://user-images.githubusercontent.com/113091304/192166763-5e3df689-8849-41e7-ab8f-b8df4e84b03d.png)
+
+### 17. Quel est l’interpréteur de commandes (Shell) de l’utilisateur root ?
+### 18. Si vous regardez la liste des comptes présents sur la machine, vous verrez qu’il en existe un nommé nobody. A quoi correspond-il ?
+### 19. Par défaut, combien de temps la commande sudo conserve-t-elle votre mot de passe en mémoire ? Quelle commande permet de forcer sudo à oublier votre mot de passe ?
 
 
 
