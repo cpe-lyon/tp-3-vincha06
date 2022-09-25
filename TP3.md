@@ -36,18 +36,35 @@ Vincent CHAVES - 3ICS
 ### 8. Comment faire pour que, dans ces dossiers, seul le propriétaire d’un fichier ait le droit de renommer ou supprimer ce fichier ?
 
 
-9. Pouvez-vous ouvrir une session en tant que alice ? Pourquoi ?
-10. Activez le compte de l’utilisateur alice et vérifiez que vous pouvez désormais vous connecter avec son
-compte.
-11. Comment obtenir l’uid et le gid de alice ?
-12. Quelle commande permet de retrouver l’utilisateur dont l’uid est 1003 ?
-13. Quel est l’id du groupe dev ?
-14. Quel groupe a pour gid 1002 ? ( Rien n’empêche d’avoir un groupe dont le nom serait 1002...)
-15. Retirez l’utilisateur charlie du groupe infra. Que se passe-t-il ? Expliquez.
-16. Modifiez le compte de dave de sorte que :
-— il expire au 1
-er juin 2021
-— il faut changer de mot de passe avant 90 jours
+### 9. Pouvez-vous ouvrir une session en tant que alice ? Pourquoi ?
+- Non car le mot de passe n'a pas été mis en place
+
+### 10. Activez le compte de l’utilisateur alice et vérifiez que vous pouvez désormais vous connecter avec son compte.
+- <code>sudo passwd alice</code>
+- Ça marche : ![image](https://user-images.githubusercontent.com/113091304/192163047-9d0aa287-0f11-4af5-b81c-b7d657db1f99.png)
+
+### 11. Comment obtenir l’uid et le gid de alice ?
+- ![image](https://user-images.githubusercontent.com/113091304/192163104-acff9fc4-427d-4d19-a4a2-f01a8271bdfe.png)
+
+### 12. Quelle commande permet de retrouver l’utilisateur dont l’uid est 1003 ?
+- ![image](https://user-images.githubusercontent.com/113091304/192163247-a5722a0d-8a0c-453c-b682-1894092f3cfd.png)
+
+### 13. Quel est l’id du groupe dev ?
+- 1002
+- ![image](https://user-images.githubusercontent.com/113091304/192163423-4272ae6d-91c7-476b-9870-762e889dc972.png)
+
+### 14. Quel groupe a pour gid 1002 ? ( Rien n’empêche d’avoir un groupe dont le nom serait 1002...)
+- dev
+
+### 15. Retirez l’utilisateur charlie du groupe infra. Que se passe-t-il ? Expliquez.
+![image](https://user-images.githubusercontent.com/113091304/192163762-195d954b-272a-40dd-bc8c-49369aa3c24a.png) 
+- Il s'affiche un message disant que l'utilisateur charlie est retiré du groupe infra.
+
+### 16. Modifiez le compte de dave de sorte que :
+#### — il expire au 1er juin 2021
+  - J'ai mis au 1er juin 2022 vu que 2021 est déjà passé :
+  - ![image](https://user-images.githubusercontent.com/113091304/192164959-63244479-bd5f-468c-9d11-ddd82ea51aaf.png)
+#### — il faut changer de mot de passe avant 90 jours
 — il faut attendre 5 jours pour modifier un mot de passe
 — l’utilisateur est averti 14 jours avant l’expiration de son mot de passe
 — le compte sera bloqué 30 jours après expiration du mot de passe
