@@ -184,7 +184,9 @@ Vincent CHAVES - 3ICS
 - ![image](https://user-images.githubusercontent.com/113091304/192241483-17a24017-a50e-4ba0-8df2-97237a649314.png)
 - Seul l'utilisateur a le droit d'écrire le fichier, et seul le root a le droit de l'éxecuter, ce qui est logique à des fins de sécurité.
 
-
+## Pour les plus rapides :
+### 15. Access Control Lists (ACL) : suivez le tutoriel de cette page : https://doc.ubuntu-fr.org/acl.
+### 16. Quotas disques : suivez le tutoriel de cette page : https://doc.ubuntu-fr.org/quota. 
 
 
 
