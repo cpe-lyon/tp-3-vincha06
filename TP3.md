@@ -148,23 +148,37 @@ Vincent CHAVES - 3ICS
 - C'est bon. 
 
 ### 10. Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture, ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire.
-- ![image](https://user-images.githubusercontent.com/113091304/192223186-cbc05648-ca47-4e90-a52e-878a0ed9fbb0.png)
+- <code>umask 077</code> :
+- ![image](https://user-images.githubusercontent.com/113091304/192234796-e6973ce6-941b-44da-a948-73dc114876c0.png)
 
 ### 11. Définissez un umask très permissif qui autorise tout le monde à lire vos fichiers et traverser vos répertoires, mais n’autorise que vous à écrire. Testez sur un nouveau fichier et un nouveau répertoire.
-- 
+- <code>umask 022</code> :
+- ![image](https://user-images.githubusercontent.com/113091304/192235203-bb11bebe-3254-4fb8-9658-075b6924a446.png)
 
 ### 12. Définissez un umask équilibré qui vous autorise un accès complet et autorise un accès en lecture aux membres de votre groupe. Testez sur un nouveau fichier et un nouveau répertoire.
+- <code>umask 037</code> :
+- ![image](https://user-images.githubusercontent.com/113091304/192236353-3d4fe27b-72de-46ed-ba7e-18f249b4ffc2.png)
 
 ### 13. Transcrivez les commandes suivantes de la notation classique à la notation octale ou vice-versa (vous pourrez vous aider de la commande stat pour valider vos réponses) :
 #### - chmod u=rx,g=wx,o=r fic
+- <code>chmod 534 fic</code>
 
 #### - chmod uo+w,g-rx fic en sachant que les droits initiaux de fic sont r--r-x---
+- Résultat : rw-----w-
+- Donc commande : <code>chmod 602 fic</code>
 
 #### - chmod 653 fic en sachant que les droits initiaux de fic sont 711
+- 711 = rwx--x--x
+- 653 = rw-r-x-wx
+- Donc : <code>chmod u-x,g+r,o+w fic</code>
+- Ou : <code>chmod u=rw,g=rx,o=wx fic</code>
 
 #### - chmod u+x,g=w,o-r fic en sachant que les droits initiaux de fic sont r--r-x---
+- Résultat : r-x-w----
+- Donc : <code>chmod 520 fic</code>
 
 ### 14. Affichez les droits sur le programme passwd. Que remarquez-vous ? En affichant les droits du fichier /etc/passwd, pouvez-vous justifier les permissions sur le programme passwd ?
+
 
 
 
