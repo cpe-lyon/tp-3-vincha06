@@ -92,6 +92,79 @@ Vincent CHAVES - 3ICS
 
 ## Exercice 2. Gestion des permissions
 
-### 1
+### 1. Dans votre $HOME, créez un dossier test, et dans ce dossier un fichier fichier contenant quelques lignes de texte. Quels sont les droits sur test et fichier ?
+- ![image](https://user-images.githubusercontent.com/113091304/192206680-da7c8983-26af-4416-b976-2593a40a2bfd.png)
+- Les droits sur test sont drwxrwxr-x, donc tout sauf l'écriture des autres, et les droits sur fichier sont -rw-rw-r--, donc lecture et écriture de l'utilisateur, lecture et écriture du groupe, et juste lecture des autres.
+
+### 2. Retirez tous les droits sur ce fichier (même pour vous), puis essayez de le modifier et de l’afficher en tant que root. Conclusion ?
+- ![image](https://user-images.githubusercontent.com/113091304/192208089-e3727124-439d-47af-bac3-b7a070b3844d.png)
+- ![image](https://user-images.githubusercontent.com/113091304/192208160-dafc7d22-a539-4f94-b117-ac052415b984.png)
+> ![image](https://user-images.githubusercontent.com/113091304/192208480-7d5da36e-3137-4fd4-8d53-a5386f3f0edb.png)
+- ![image](https://user-images.githubusercontent.com/113091304/192208217-d9ac32c9-7e03-48d9-b292-326f940e0baa.png)
+- On ne peut plus accéder au dossier test, par contre le root le peut toujours.
+- Conclusion : le root a toujours accès aux dossiers/fichiers même si toutes les permissions sont retirés sur eux.
+
+### 3. Redonnez vous les droits en écriture et exécution sur fichier puis exécutez la commande echo "echo Hello" > fichier. On a vu lors des TP précédents que cette commande remplace le contenu d’un fichier s’il existe déjà. Que peut-on dire au sujet des droits ?
+- Je me redonne les droits :
+- ![image](https://user-images.githubusercontent.com/113091304/192209727-f1038954-2fda-4dab-826c-273e093fb40e.png)
+- ![image](https://user-images.githubusercontent.com/113091304/192209773-27a72b55-c917-40f5-b302-a6e55c97cd97.png)
+- Je vérifie si j'ai bien accès à fichier :
+- ![image](https://user-images.githubusercontent.com/113091304/192209843-027cc64e-135f-4158-88a2-865e7c8f017b.png)
+- Je fais le echo hello :
+- ![image](https://user-images.githubusercontent.com/113091304/192210143-03b71f4c-2caa-4332-85ce-f44dcc439493.png)
+- Je vérifie les droits :
+> ![image](https://user-images.githubusercontent.com/113091304/192210259-d21b23a5-d5bf-470f-ae25-1068eb8e6903.png)
+- Je peux donc à nouveau modifier fichier sans les droits root.
+
+
+### 4. Essayez d’exécuter le fichier. Est-ce que cela fonctionne ? Et avec sudo ? Expliquez.
+- Cela marche car l'on vient de se redonner les droits.
+
+### 5. Placez-vous dans le répertoire test, et retirez-vous le droit en lecture pour ce répertoire. Listez le contenu du répertoire, puis exécutez ou affichez le contenu du fichier fichier. Qu’en déduisez-vous ? Rétablissez le droit en lecture sur test.
+- Je m'enlève le droit de lecture: 
+- ![image](https://user-images.githubusercontent.com/113091304/192211738-a6823b76-de19-4172-876b-4945d2f533ad.png)
+- Je tente d'afficher le contenu du répertoire :
+- ![image](https://user-images.githubusercontent.com/113091304/192211907-cee82d03-125e-4e1f-82c3-62ea0d0a63de.png)
+- Je modifie le fichier puis je le supprime (ça marche) :
+- ![image](https://user-images.githubusercontent.com/113091304/192212722-662a1dfd-d6c4-4519-a809-ff3c76e5a48a.png)
+- J'en déduis que le droit d'écriture n'a pas été retiré, mais le droit de lecture si.
+
+
+### 6. Créez dans test un fichier nouveau ainsi qu’un répertoire sstest. Retirez au fichier nouveau et au répertoire test le droit en écriture. Tentez de modifier le fichier nouveau. Rétablissez ensuite le droit en écriture au répertoire test. Tentez de modifier le fichier nouveau, puis de le supprimer. Que pouvezvous déduire de toutes ces manipulations ?
+- ![image](https://user-images.githubusercontent.com/113091304/192214496-e65c88cf-5534-4b1b-a033-c2d8e07c8384.png)
+- Je ne peux pas écrire dans nouveau par contre je peux le supprimer. Cela veut dire que retirer le droit d'écriture ne retire pas le droit de suppression.
+
+### 7. Positionnez vous dans votre répertoire personnel, puis retirez le droit en exécution du répertoire test. Tentez de créer, supprimer, ou modifier un fichier dans le répertoire test, de vous y déplacer, d’en lister le contenu, etc…Qu’en déduisez vous quant au sens du droit en exécution pour les répertoires ?
+- ![image](https://user-images.githubusercontent.com/113091304/192215733-1d994cc5-2abe-4ace-89dc-4fba3a2c97a1.png)
+- Rien de tout ça ne marche, retirer le droit d'éxecution nous empêche d'effectuer ces actions.
+
+### 8. Rétablissez le droit en exécution du répertoire test. Positionnez vous dans ce répertoire et retirez lui à nouveau le droit d’exécution. Essayez de créer, supprimer et modifier un fichier dans le répertoire test, de vous déplacer dans ssrep, de lister son contenu. Qu’en concluez-vous quant à l’influence des droits que l’on possède sur le répertoire courant ? Peut-on retourner dans le répertoire parent avec ”cd ..” ? Pouvez-vous donner une explication ?
+- Comme pour la question précédente, ça ne marche pas non plus, même si on est déjà dans le répertoire.
+
+### 9. Rétablissez le droit en exécution du répertoire test. Attribuez au fichier fichier les droits suffisants pour qu’une autre personne de votre groupe puisse y accéder en lecture, mais pas en écriture.
+- ![image](https://user-images.githubusercontent.com/113091304/192220984-7d97b1a5-667a-4b7f-a533-e39b245db0aa.png)
+- Je vérifie avec <code>ll</code>: 
+- ![image](https://user-images.githubusercontent.com/113091304/192221124-9dbfcd72-ef4e-4a0f-955e-2098409b8517.png)
+- C'est bon. 
+
+### 10. Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture, ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire.
+- ![image](https://user-images.githubusercontent.com/113091304/192223186-cbc05648-ca47-4e90-a52e-878a0ed9fbb0.png)
+
+### 11. Définissez un umask très permissif qui autorise tout le monde à lire vos fichiers et traverser vos répertoires, mais n’autorise que vous à écrire. Testez sur un nouveau fichier et un nouveau répertoire.
+- 
+
+### 12. Définissez un umask équilibré qui vous autorise un accès complet et autorise un accès en lecture aux membres de votre groupe. Testez sur un nouveau fichier et un nouveau répertoire.
+
+### 13. Transcrivez les commandes suivantes de la notation classique à la notation octale ou vice-versa (vous pourrez vous aider de la commande stat pour valider vos réponses) :
+#### - chmod u=rx,g=wx,o=r fic
+
+#### - chmod uo+w,g-rx fic en sachant que les droits initiaux de fic sont r--r-x---
+
+#### - chmod 653 fic en sachant que les droits initiaux de fic sont 711
+
+#### - chmod u+x,g=w,o-r fic en sachant que les droits initiaux de fic sont r--r-x---
+
+### 14. Affichez les droits sur le programme passwd. Que remarquez-vous ? En affichant les droits du fichier /etc/passwd, pouvez-vous justifier les permissions sur le programme passwd ?
+
 
 
