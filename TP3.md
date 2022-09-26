@@ -41,7 +41,8 @@ Vincent CHAVES - 3ICS
 
 ### 10. Activez le compte de l’utilisateur alice et vérifiez que vous pouvez désormais vous connecter avec son compte.
 - <code>sudo passwd alice</code>
-- Ça marche : ![image](https://user-images.githubusercontent.com/113091304/192163047-9d0aa287-0f11-4af5-b81c-b7d657db1f99.png)
+- Ça marche :
+- ![image](https://user-images.githubusercontent.com/113091304/192163047-9d0aa287-0f11-4af5-b81c-b7d657db1f99.png)
 
 ### 11. Comment obtenir l’uid et le gid de alice ?
 - ![image](https://user-images.githubusercontent.com/113091304/192163104-acff9fc4-427d-4d19-a4a2-f01a8271bdfe.png)
