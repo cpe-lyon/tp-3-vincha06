@@ -178,6 +178,12 @@ Vincent CHAVES - 3ICS
 - Donc : <code>chmod 520 fic</code>
 
 ### 14. Affichez les droits sur le programme passwd. Que remarquez-vous ? En affichant les droits du fichier /etc/passwd, pouvez-vous justifier les permissions sur le programme passwd ?
+- <code>ll /etc</code> :
+- ![image](https://user-images.githubusercontent.com/113091304/192241129-9b9b6733-70e1-4810-94ce-d45f83e6e95c.png)
+- ou : <code>stat /etc/passwd</code>
+- ![image](https://user-images.githubusercontent.com/113091304/192241483-17a24017-a50e-4ba0-8df2-97237a649314.png)
+- Seul l'utilisateur a le droit d'écrire le fichier, et seul le root a le droit de l'éxecuter, ce qui est logique à des fins de sécurité.
+
 
 
 
