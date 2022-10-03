@@ -34,8 +34,11 @@ Vincent CHAVES - 3ICS
 - ![image](https://user-images.githubusercontent.com/113091304/192105222-207ec1d8-a0de-404c-8b4e-79b1de96e352.png)
 
 ### 8. Comment faire pour que, dans ces dossiers, seul le propriétaire d’un fichier ait le droit de renommer ou supprimer ce fichier ?
-
-
+- Il faut faire :
+- <code>sudo chmod u=rwx,g-rwx,o-rwx</code>
+- Ou plus simplement :
+- <code>sudo chmod 700</code>
+- 
 ### 9. Pouvez-vous ouvrir une session en tant que alice ? Pourquoi ?
 - Non car le mot de passe n'a pas été mis en place
 
