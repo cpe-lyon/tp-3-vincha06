@@ -38,7 +38,7 @@ Vincent CHAVES - 3ICS
 - <code>sudo chmod u=rwx,g-rwx,o-rwx</code>
 - Ou plus simplement :
 - <code>sudo chmod 700</code>
-- 
+
 ### 9. Pouvez-vous ouvrir une session en tant que alice ? Pourquoi ?
 - Non car le mot de passe n'a pas été mis en place
 
